@@ -5,7 +5,6 @@ target/
 !**/src/test/**/target/
 
 out/
-history/
 
 ### STS Eclipse ###
 .apt_generated
