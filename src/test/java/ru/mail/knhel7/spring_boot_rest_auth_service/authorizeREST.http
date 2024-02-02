@@ -39,3 +39,9 @@ Accept: application/json
 
 ###
 
+# Blank username 400 DefaultHandlerExceptionResolver
+GET {{baseUrl}}?username=   &password=33333
+Accept: application/json
+
+###
+
