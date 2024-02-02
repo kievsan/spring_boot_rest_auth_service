@@ -20,7 +20,6 @@ public class User {
     private String password;
 
     @Setter
-    @NotBlank
     private Roles role;
 
     public User() {

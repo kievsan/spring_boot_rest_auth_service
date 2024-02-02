@@ -12,7 +12,7 @@ public class UserRepo {
 
     private static Map<Roles, HashSet<Authorities>> roles = new HashMap<>();
     static {
-        roles.put(Roles.GUEST,  new HashSet<Authorities>());
+        roles.put(Roles.GUEST, new HashSet<Authorities>());
         roles.put(Roles.USER,  new HashSet<Authorities>(List.of(Authorities.READ)));
         roles.put(Roles.STAFF, new HashSet<Authorities>(List.of(Authorities.READ, Authorities.WRITE)));
         roles.put(Roles.ADMIN, new HashSet<Authorities>(List.of(Authorities.READ, Authorities.WRITE, Authorities.DELETE)));
