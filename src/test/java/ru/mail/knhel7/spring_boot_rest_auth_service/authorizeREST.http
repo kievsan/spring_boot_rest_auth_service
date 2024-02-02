@@ -1,0 +1,41 @@
+# примеры API-запросов
+
+@baseUrl = http://localhost:8080/authorize
+
+
+# ADMIN 200 "READ", "WRITE", "DELETE"
+GET {{baseUrl}}?username=user0&password=00000
+Accept: application/json
+
+###
+
+# GUEST as Unknown 401
+GET {{baseUrl}}?username=user1&password=11111
+Accept: application/json
+
+###
+
+# Unknown 401
+GET {{baseUrl}}?username=user100&password=11111
+Accept: application/json
+
+###
+
+# USER 200 "READ"
+GET {{baseUrl}}?username=user2&password=22222
+Accept: application/json
+
+###
+
+# Unknown 401
+GET {{baseUrl}}?username=user2&password=11111
+Accept: application/json
+
+###
+
+# STAFF 200 "READ", "WRITE"
+GET {{baseUrl}}?username=user3&password=33333
+Accept: application/json
+
+###
+
