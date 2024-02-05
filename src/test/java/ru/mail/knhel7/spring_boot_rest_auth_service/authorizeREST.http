@@ -1,6 +1,7 @@
 # примеры API-запросов
 
-@baseUrl = http://localhost:8080/authorize
+# @baseUrl = http://localhost:8080/authorize
+@baseUrl = localhost/authorize
 
 
 # ADMIN 200 "READ", "WRITE", "DELETE"
