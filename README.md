@@ -5,6 +5,7 @@
 1. [Сервис авторизации](./src/task1/README.md).
 2. [Продвинутый сервис авторизации*](./src/task2/README.md) (задача со звёздочкой).
 3. [Прокси на NGINX](./src/task3/README.md).
+4. [Первый Docker-образ](./src/task4/README.md).
 
 =======
 

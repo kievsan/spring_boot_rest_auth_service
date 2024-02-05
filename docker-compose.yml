@@ -1,0 +1,19 @@
+version: "1.0"
+
+networks:
+  backend:
+
+services:
+  rest_app:
+    build: ./
+    ports:
+      - "8080"
+#      - "55000:8080"
+#      - "55001:8080"
+    networks:
+      - backend
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
