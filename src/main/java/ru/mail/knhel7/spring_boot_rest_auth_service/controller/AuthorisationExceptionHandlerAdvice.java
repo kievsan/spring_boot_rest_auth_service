@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import ru.mail.knhel7.spring_boot_rest_auth_service.exception.UnauthorizedUser;
 
 @RestControllerAdvice
+
 public class AuthorisationExceptionHandlerAdvice {
 
     @ExceptionHandler(UnauthorizedUser.class)
